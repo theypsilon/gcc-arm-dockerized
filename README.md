@@ -2,7 +2,7 @@
 
 Useful for compiling for arm targets.
 
-Developed for its use in [Main_MiSTer](git@github.com:Miguel-T80c/Main_MiSTer.git).
+Developed for its use in [Main_MiSTer](https://github.com/Miguel-T80c/Main_MiSTer).
 
 Contains `make`.
 
