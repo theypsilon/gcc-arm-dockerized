@@ -1,4 +1,5 @@
 FROM ubuntu:18.04
+LABEL maintainer="theypsilon@gmail.com"
 ARG GCCLINARO_URL
 WORKDIR /gcc-linaro
 RUN apt-get update && apt-get -y install wget xz-utils make; \
