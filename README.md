@@ -9,6 +9,7 @@ Contains `make`.
 Images on [docker hub](https://hub.docker.com/r/theypsilon/gcc-linaro): 
 ```bash
 theypsilon/gcc-linaro:6.5.0 # 667MB
+theypsilon/gcc-linaro:7.5.0 # 697MB
 ```
 
 When using the image, `/gcc-linaro/bin` will be in your `PATH`.
