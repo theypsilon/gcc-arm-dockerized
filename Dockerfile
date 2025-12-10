@@ -4,7 +4,7 @@ ARG GCCARM_URL
 ARG GCCARM_MD5
 ARG GCCARM_BIN
 ARG GCCARM_DIR
-WORKDIR "${GCCARM_DIR}"
+WORKDIR /project
 RUN apt-get update && apt-get -y install wget xz-utils make && \
     wget -q "${GCCARM_URL}" && \
     wget -qO- "${GCCARM_MD5}" | md5sum -c && \
@@ -14,5 +14,4 @@ RUN apt-get update && apt-get -y install wget xz-utils make && \
     [ -f "bin/${GCCARM_BIN}" ] || { echo "Binaries not correctly downloaded" && false ; } && \
     apt-get remove -y --auto-remove wget xz-utils && \
     rm -rf /var/lib/apt/lists/*;
-ADD quartus_sh /opt/intelFPGA_lite/quartus/bin/quartus_sh
 ENV PATH="${GCCARM_DIR}/bin:${PATH}"
